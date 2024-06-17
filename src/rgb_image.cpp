@@ -169,3 +169,6 @@ int*** RGBImage::getPixels(){
   return pixels;
 }
 
+void RGBImage::ApplyFilter(uint8_t options, double theta, int length) {
+  applyFilters(pixels, w, h, options, theta, length);
+}

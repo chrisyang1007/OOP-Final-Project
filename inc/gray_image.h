@@ -17,6 +17,7 @@ public:
   void Display_X_Server();
   void Display_ASCII();
   void Display_CMD();
+  void ApplyFilter(uint8_t options, double theta = 0.0, int length = 15);
 };
 
 #endif

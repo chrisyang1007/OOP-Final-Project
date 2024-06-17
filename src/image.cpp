@@ -46,6 +46,8 @@ void Image::Transform(int _w, int _h){
   return;
 }
 
-void Image::LoadElements(vector<string> vec){
+void Image::LoadElements(string fname){
   return;
 }
+
+void Image::ApplyFilter(uint8_t options, double theta, int length){}

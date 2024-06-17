@@ -20,7 +20,8 @@ public:
   virtual void Display_CMD();
   virtual void resize(int _w, int _h);
   virtual void Transform(int _w, int _h);
-  virtual void LoadElements(vector<string> vec);
+  virtual void LoadElements(string fname);
+  virtual void ApplyFilter(uint8_t options, double theta = 0.0, int length = 15);
 };
 
 #endif

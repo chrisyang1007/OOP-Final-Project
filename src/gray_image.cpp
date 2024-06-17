@@ -1,4 +1,5 @@
 #include"gray_image.h"
+#include"bit_field_filter.h"
 using namespace std;
 
 GrayImage::GrayImage(){
@@ -51,4 +52,8 @@ void GrayImage::Display_CMD(){
   data_loader.Display_Gray_CMD("temp.png");
   remove("temp.png");
   return;
+}
+
+void GrayImage::ApplyFilter(uint8_t options, double theta, int length) {
+  applyFilters(pixels, w, h, options, theta, length);
 }

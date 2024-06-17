@@ -4,12 +4,13 @@ using namespace std;
 PhotoMosaic::PhotoMosaic(){}
 
 PhotoMosaic::~PhotoMosaic(){
-  for(int i = 0; i < elements.size(); i++)
-    elements[i].~RGBImage();
+  
 }
 
 
-void PhotoMosaic::LoadElements(vector<string> vec){
+void PhotoMosaic::LoadElements(string fname){
+  vector<string> vec;
+  data_loader.List_Directory(fname, vec);
   elements.resize(vec.size());
   for(int i = 0; i < vec.size(); i++){
     elements[i].LoadImage(vec[i]);

@@ -10,7 +10,7 @@ class PhotoMosaic: public RGBImage{
   public:
     PhotoMosaic();
     ~PhotoMosaic();
-    void LoadElements(vector<string> vec);
+    void LoadElements(string fname);
     void Normalize(int _w, int _h);
     void Transform(int _w, int _h);
     
